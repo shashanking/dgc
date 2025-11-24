@@ -1,0 +1,51 @@
+.mapContainer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.mapSvg {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.country {
+    fill: #e0e0e0;
+    stroke: #ffffff;
+    stroke-width: 0.5;
+    transition: all 0.3s ease;
+}
+
+.country.active {
+    fill: var(--primary-color);
+    animation: pulse 2s infinite;
+}
+
+.country:hover {
+    fill: var(--secondary-color);
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.mapTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--text-color);
+}
