@@ -97,10 +97,30 @@ h3 {
   font-size: 1.75rem;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 /* Buttons */

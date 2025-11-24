@@ -36,9 +36,73 @@
     color: var(--primary-color);
 }
 
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    padding: 0.5rem;
+}
+
+.mobileCta {
+    display: none;
+}
+
+.desktopCta {
+    display: inline-flex;
+}
+
 @media (max-width: 768px) {
-    .navLinks {
+    .menuToggle {
+        display: block;
+    }
+
+    .desktopCta {
         display: none;
-        /* Mobile menu to be implemented if needed */
+    }
+
+    .navLinks {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        border-top: 1px solid var(--gray-100);
+    }
+
+    .navLinks.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navLinks li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navLinks a {
+        display: block;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .mobileCta {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .mobileCta a {
+        width: 100%;
     }
 }

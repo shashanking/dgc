@@ -1,0 +1,106 @@
+.container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.heroImageWrapper {
+    position: relative;
+    height: 500px;
+    margin-bottom: 3rem;
+    width: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: var(--gray-600);
+    max-width: 900px;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.prose {
+    max-width: 900px;
+    font-size: 1.15rem;
+    color: var(--gray-700);
+    line-height: 1.8;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.ctaSection {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 4rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    color: var(--white);
+    box-shadow: var(--shadow-xl);
+}
+
+.ctaTitle {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ctaText {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.ctaButton {
+    background: var(--white);
+    color: var(--primary-color);
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .heroImageWrapper {
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .ctaSection {
+        padding: 2rem;
+    }
+
+    .ctaTitle {
+        font-size: 1.75rem;
+    }
+
+    .ctaText {
+        font-size: 1.1rem;
+    }
+}

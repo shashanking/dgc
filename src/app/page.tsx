@@ -70,7 +70,7 @@ export default async function Home() {
           opacity: 0.8
         }} className="animate-fade-in delay-100">
           {clients.map((client: any) => (
-            <div key={client._id} style={{ width: '160px', height: '90px', position: 'relative', filter: 'grayscale(100%)', transition: 'all 0.3s ease' }} className="client-logo">
+            <div key={client._id} style={{ width: '160px', height: '90px', position: 'relative', transition: 'all 0.3s ease' }} className="client-logo">
               {client.logo && (
                 <Image
                   src={client.logo}
