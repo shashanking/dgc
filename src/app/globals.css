@@ -179,6 +179,18 @@ h3 {
   margin-bottom: var(--spacing-lg);
 }
 
+.mt-sm {
+  margin-top: var(--spacing-sm);
+}
+
+.mt-md {
+  margin-top: var(--spacing-md);
+}
+
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+
 .section {
   padding: var(--spacing-lg) 0;
 }
