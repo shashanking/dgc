@@ -84,7 +84,7 @@ export default async function AboutPage() {
                                                 src={member.image}
                                                 alt={member.name}
                                                 fill
-                                                style={{ objectFit: 'cover' }}
+                                                style={{ objectFit: 'cover', objectPosition: 'top' }}
                                             />
                                         </div>
                                     )}
